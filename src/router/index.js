@@ -33,6 +33,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "RegistrarCliente" */ '../pages/RegistrarseComoCliente')
   },
   {
+    path: '/clientes/actualizar',
+    name: 'ActualizarCliente',
+    component: () => import(/* webpackChunkName: "RegistrarCliente" */ '../pages/ActualizarCliente.vue')
+  },
+  {
     path: '/empleados/clientes',
     name: 'RegistrarClienteE',
     component: () => import(/* webpackChunkName: "RegistrarClienteE" */ '../pages/RegistrarCliente')
@@ -81,7 +86,16 @@ const routes = [
     name: 'ReporteReserva',
     component: () => import(/* webpackChunkName: "ReporteReserva" */ '../pages/ReporteReservas')
   },
-  
+  {
+    path: '/empleados/vehiculos/retirar/reservado',
+    name: 'retirarVehiculoReservado',
+    component: () => import(/* webpackChunkName: "ReporteReserva" */ '../pages/RetirarVehiculos.vue')
+  },
+  {
+    path: '/empleados/vehiculos/retirar/sin_reserva',
+    name: 'retirarVehiculoSinReserva',
+    component: () => import(/* webpackChunkName: "ReporteReserva" */ '../pages/RetirarVehiculos.vue')
+  },
 
 ]
 

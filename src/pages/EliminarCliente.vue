@@ -4,7 +4,7 @@
   <div class="fromMine">
     <div class="form-group">
 
-      <label class="form-label" for="id">Ingrese el id a actulizar</label>
+      <label class="form-label" for="id">Ingrese el id a eliminar</label>
       <input v-model="id" class="form-control" type="text" id="id">
       <br>
       <br>

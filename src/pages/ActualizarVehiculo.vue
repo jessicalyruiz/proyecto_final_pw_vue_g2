@@ -38,7 +38,7 @@
         <input v-model="valor" class="form-control" type="number" id="valor">
 
 
-        <button v-on:click="ingresar" class="btnGo">Ingresar</button>
+        <button v-on:click="actualizar" class="btnGo">Ingresar</button>
     </div>
     </div>
 </template>
@@ -87,13 +87,14 @@ export default {
       actualizar(){
         const myVehiculo= {
             "placa":this.placa,
-            "marca": this.marcaSeleccionada,
-            "modelo": this.modeloSellecionado,
+            "marca": this.marca,
+            "modelo": this.modelo,
             "anioFabricacion":this.anio,
             "valorPorDia": this.valor,
             "paisFabricacion":this.pais,
             "avaluo": this.avaluo,
             "cilindraje":this.cilindraje,
+            "estado":this.estado,
          }
       console.log('actualizar '+this.idV)
         actualizarVehiculoFachada(this.idV,myVehiculo )

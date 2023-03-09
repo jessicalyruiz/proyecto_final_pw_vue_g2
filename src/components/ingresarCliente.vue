@@ -25,6 +25,8 @@
                             cApellido:apellido,
                             cFecha:fecha,
                             cGenero:genero,})" class="btnGo">Ingresar</button>
+
+          <button v-on:click="limpiar" class="btnGo">Limpiar</button>
     </div>
     </div>
 </template>
@@ -44,7 +46,13 @@ export default {
         }
     },
     methods:{
-        
+        limpiar(){
+          this.cedula=null
+              this.nombre=null
+              this.apellido=null
+              this.fecha=null
+              this.genero=null
+        }
     }
 }
 </script>

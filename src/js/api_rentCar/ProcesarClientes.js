@@ -21,14 +21,14 @@ export const ingresarClienteFachada=async(body)=>{
     await ingresarCliente(body);
 }
 
+//1.D
+export const actualizarFachada = (id, body) => {
+    actualizar(id, body);
+}
 
-
-
-
-
-
-
-
+export const buscarClientePorIdFachada=async (id)=>{
+    return await buscarClientePorId(id);
+}
 
 //*********************metodos
     // 1.a: Buscar vehículos disponibles
@@ -58,4 +58,13 @@ const buscarVehiculoD=async(marcaV, modeloV)=>{
 
 const ingresarCliente=async(body)=>{
     axios.post('http://localhost:8081/API/RentACar/V1/clientes',body).then(r=>r.data)
+}
+
+//1.D
+const actualizar = (id, body) => {
+    axios.put(`http://localhost:8081/API/RentACar/V1/clientes/${id}`,body).then(r => r.data)
+}
+
+const buscarClientePorId=async(id)=>{
+    return axios.get(`http://localhost:8081/API/RentACar/V1/clientes/${id}`,).then(r => r.data)
 }

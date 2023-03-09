@@ -6,6 +6,8 @@
         <router-link to="/empleados/clientes/porApellido"> Buscar Cliente</router-link>
         <router-link to="/empleados/vehiculos"> Ingresar Vehiculo</router-link>
         <router-link to="/empleados/vehiculos/porMarca"> Buscar Vehiculo</router-link>
+        <router-link to="/empleados/vehiculos/retirar/reservado"> Retirar Vehiculo Reservado</router-link>
+        <router-link to="/empleados/vehiculos/retirar/sin_reserva"> Retirar Vehiculo sin Reserva</router-link>
   </nav>
 
 </template>
