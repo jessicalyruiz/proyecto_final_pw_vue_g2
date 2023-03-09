@@ -1,6 +1,6 @@
 <template>
   <h2>Actualizar Vehiculo</h2>
-  <p>{{ idC }}</p>
+  <p>{{ idV }}</p>
   <div class="fromMine">
         <div class="form-group">
         <label class="form-label" for="placa">Placa</label>
@@ -38,7 +38,7 @@
         <input v-model="valor" class="form-control" type="number" id="valor">
 
 
-        <button v-on:click="ingresar" class="btnGo">Ingresar</button>
+        <button v-on:click="actualizar" class="btnGo">Actualizar</button>
     </div>
     </div>
 </template>
